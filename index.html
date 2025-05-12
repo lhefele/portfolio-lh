@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lisa Hefele | Generative AI Portfolio</title>
+  <style>
+    /* ----- CSS Reset & Base Styles ----- */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      color: #222;
+      line-height: 1.6;
+      background: #ffffff;
+    }
+
+    a { color: #003366; text-decoration: none; }
+
+    h1, h2 { color: #003366; font-weight: 600; }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+
+    /* ----- Name Banner ----- */
+    .name-banner {
+      background: #00264d; /* slightly darker */
+      color: #ffffff;
+      text-align: center;
+      padding: 0.75rem 1rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    /* ----- Layout ----- */
+    header {
+      background: #003366;
+      color: #ffffff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    nav { margin-top: 0.5rem; }
+    nav a { color: #ffffff; margin: 0 0.75rem; font-size: 0.9rem; opacity: 0.9; transition: opacity 0.2s ease; }
+    nav a:hover { opacity: 1; }
+
+    main { max-width: 780px; margin: 0 auto; padding: 2rem 1rem; }
+    section { margin: 2.5rem 0; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.85rem;
+      background: #f6f6f6;
+      color: #555;
+    }
+
+    /* ----- Lists & Links ----- */
+    ul li { margin-left: 1rem; margin-bottom: 0.4rem; }
+
+    .external-links {
+      margin: 0 0 2rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+    }
+    .external-links a { font-weight: 500; border-bottom: 1px solid transparent; }
+    .external-links a:hover { border-color: #003366; }
+
+    /* ----- Custom Spacing ----- */
+    #about-me p { margin-bottom: 1.75rem; }
+    #about-course p { margin-bottom: 1.75rem; }
+
+    /* ----- Submission Tiles ----- */
+    .submission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .submission-card {
+      background: #fafafa;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s ease;
+    }
+    .submission-card:hover { box-shadow: 0 3px 8px rgba(0,0,0,0.1); }
+    .submission-card strong { display: block; margin-bottom: 0.5rem; }
+    .submission-card p { font-size: 0.9rem; margin-bottom: 0.6rem; }
+    .submission-card a { font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <!-- Name banner at very top -->
+  <div class="name-banner">Lisa Hefele</div>
+
+  <header>
+    <h1>Lisa Hefele</h1>
+    <p>Epidemiologist &amp; Generative AI Enthusiast</p>
+    <nav aria-label="Site navigation">
+      <a href="#about-me">About Me</a>
+      <a href="#about-course">Course</a>
+      <a href="#weekly-submissions">Submissions</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- External profile links placed above About Me -->
+    <div class="external-links" aria-label="Profiles">
+      <a href="https://linkedin.com/in/lisahefele/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/lhefele" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://orcid.org/0000-0001-5449-9503" target="_blank" rel="noopener">ORCID</a>
+    </div>
+
+    <!-- About Me -->
+    <section id="about-me">
+      <h2>About Me</h2>
+      <p>
+        I am a postdoctoral researcher with expertise in population‑based studies, overseeing study design, field operations, advanced statistical analyses, and translating evidence into public‑health policy.
+      </p>
+
+      <h3>Research &amp; Technical Skills</h3>
+      <ul>
+        <li>Epidemiological study design</li>
+        <li>Project management</li>
+        <li>Data analysis &amp; visualisation (R, Stata, Python)</li>
+        <li>Digital data collection (REDCap, Kobotoolbox)</li>
+        <li>Reproducible research</li>
+        <li>AI‑driven workflows</li>
+      </ul>
+    </section>
+
+    <!-- About the Course -->
+    <section id="about-course">
+      <h2>About the Course</h2>
+      <p>
+        <strong>Generative AI for Work &amp; Research Productivity Bootcamp 2025 Q2</strong> — This immersive 8‑week journey equips professionals and researchers to harness Generative AI for automating analysis, content creation, knowledge management and more. Each hands‑on module combines live workshops, guided projects, and peer feedback.
+      </p>
+
+      <h3>Focus Areas</h3>
+      <ul>
+        <li>AI‑assisted writing &amp; documentation</li>
+        <li>No‑code data analysis &amp; dashboards</li>
+        <li>Custom chatbots for domain Q&amp;A</li>
+        <li>24/7 workflow automation</li>
+        <li>Image &amp; video generation / editing</li>
+        <li>AI integration in research projects</li>
+      </ul>
+    </section>
+
+    <!-- Weekly Submissions -->
+    <section id="weekly-submissions">
+      <h2>Weekly Submissions</h2>
+      <div class="submission-grid">
+        <div class="submission-card">
+          <strong>Week 1 – Foundations &amp; Prompt Engineering</strong>
+          <p>This webpage built with HTML &amp; CSS and deployed on GitHub.</p>
+          <a href="#" target="_blank" rel="noopener">View submission</a>
+        </div>
+        <div class="submission-card">
+          <strong>Week 2 – AI‑Assisted Writing</strong>
+          <p>Coming soon…</p>
+        </div>
+        <div class="submission-card">
+          <strong>Week 3 – Data Analysis &amp; Dashboards</strong>
+          <p>Coming soon…</p>
+        </div>
+        <div class="submission-card">
+          <strong>Week 4 – Custom Chatbots</strong>
+          <p>Coming soon…</p>
+        </div>
+        <div class="submission-card">
+          <strong>Week 5 – Automating Workflows</strong>
+          <p>Coming soon…</p>
+        </div>
+        <div class="submission-card">
+          <strong>Week 6 – Image &amp; Video Generation</strong>
+          <p>Coming soon…</p>
+        </div>
+        <div class="submission-card">
+          <strong>Week 7 – AI in Research Projects</strong>
+          <p>Coming soon…</p>
+        </div>
+        <div class="submission-card">
+          <strong>Week 8 – Capstone &amp; Future Directions</strong>
+          <p>Coming soon…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Lisa Hefele</p>
+  </footer>
+
+  <script> document.getElementById("year").textContent = new Date().getFullYear(); </script>
+</body>
+</html>
