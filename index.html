@@ -5,24 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lisa Hefele | Research Portfolio</title>
   <style>
-    /* ----- CSS Reset & Base Styles ----- */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       color: #222;
       line-height: 1.6;
       background: #ffffff;
     }
-
     a { color: #003366; text-decoration: none; }
-
     h1, h2 { color: #ffffff; font-size: 1.5rem; margin-bottom: 0.75rem; }
     h1 { font-size: 2rem; margin-bottom: 0.5rem; }
     h2 { color: #003366; font-size: 1.5rem; margin-bottom: 0.75rem; }
     h3 { color: #003366; font-weight: 500; margin-bottom: 0.5rem; }
-
-    /* ----- Avatar ----- */
     .avatar {
       width: 140px;
       height: 140px;
@@ -32,8 +26,6 @@
       border: 3px solid #ffffff;
       display: block;
     }
-
-    /* ----- Layout ----- */
     header {
       background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
                   url('https://raw.githubusercontent.com/lhefele/graph-ai-portfolio-lh/main/IMG_20170520_174915.jpg') center / cover no-repeat;
@@ -41,14 +33,17 @@
       text-align: center;
       padding: 3rem 1rem 2rem;
     }
-
     nav { margin-top: 0.5rem; }
-    nav a { color: #ffffff; margin: 0 0.65rem; font-size: 0.9rem; opacity: 0.9; transition: opacity 0.2s ease; }
+    nav a {
+      color: #ffffff;
+      margin: 0 0.65rem;
+      font-size: 0.9rem;
+      opacity: 0.9;
+      transition: opacity 0.2s ease;
+    }
     nav a:hover { opacity: 1; }
-
     main { max-width: 780px; margin: 0 auto; padding: 2rem 1rem; }
     section { margin: 2.5rem 0; }
-
     footer {
       text-align: center;
       padding: 1.5rem 1rem;
@@ -56,10 +51,7 @@
       background: #f6f6f6;
       color: #555;
     }
-
-    /* ----- Lists & Links ----- */
     ul li { margin-left: 1rem; margin-bottom: 0.4rem; }
-
     .external-links {
       margin: 0 0 2rem 0;
       display: flex;
@@ -74,10 +66,23 @@
       color: #003366;
     }
     .external-links a:hover { border-color: #003366; }
-
-    /* ----- Custom Spacing ----- */
     #about-me p { margin-bottom: 1.75rem; }
-
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .project-card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: #f9f9f9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    }
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: #003366;
+    }
   </style>
 </head>
 <body>
@@ -86,25 +91,23 @@
     <img src="https://github.com/lhefele/graph-ai-portfolio-lh/blob/main/saved.png?raw=true" alt="Lisa Hefele" class="avatar" />
     <nav aria-label="Site navigation">
       <a href="#about-me">About Me</a>
+      <a href="#about-me">Skills</a>
       <a href="#research-interests">Interests</a>
+      <a href="#projects">Projects</a>
       <a href="#contact-consultation">Contact</a>
     </nav>
   </header>
-
   <main>
     <div class="external-links" aria-label="Profiles">
       <a href="https://linkedin.com/in/lisahefele/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/lhefele" target="_blank" rel="noopener">GitHub</a>
       <a href="https://orcid.org/0000-0001-5449-9503" target="_blank" rel="noopener">ORCID</a>
     </div>
-
-    <!-- About Me -->
     <section id="about-me">
       <h2>About Me</h2>
       <p>
         I specialise in planning and conducting epidemiological research, utilising digital data‑collection platforms and applying advanced analytics in R and Stata to generate actionable insights. I am passionate about open science; I share reproducible code on <a href="https://github.com/lhefele" target="_blank" rel="noopener">GitHub</a> and advocate transparent, version-controlled workflows. I also leverage generative AI to accelerate literature reviews, refine code, and build automated workflows. Comfortable in multidisciplinary teams, I focus on translating reliable data into practical improvements for public health.
       </p>
-
       <h2>Research &amp; Technical Skills</h2>
       <ul>
         <li>Epidemiological study design &amp; field coordination</li>
@@ -115,8 +118,6 @@
         <li>AI‑driven workflows &amp; automation</li>
       </ul>
     </section>
-
-    <!-- Research Interests -->
     <section id="research-interests">
       <h2>Research Interests</h2>
       <ul>
@@ -129,23 +130,38 @@
         <li>Science communication &amp; evidence‑to‑policy translation</li>
       </ul>
     </section>
-
-   <!-- Contact for Consultation -->
-<section id="contact-consultation">
-  <h2>Contact for Consultation</h2>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6Qfu7Hp-tFzOCPB1tv6fbcSsjZeC2aNnIxhPe8XtVhRNgqA/viewform?embedded=true" width="640" height="876" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</section>
-
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="card-container">
+        <div class="project-card">
+          <h3><a href="https://www.thelancet.com/journals/lanwpc/article/PIIS2666-6065(22)00247-4/fulltext" target="_blank" rel="noopener">High exposure to hepatitis C virus in Saravan, southern Laos</a></h3>
+          <p>Identification of several risk practices in a high-prevalence setting using epidemiological tools and community-level data.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://doi.org/10.1016/j.lanwpc.2024.101059" target="_blank" rel="noopener">Factors associated with hepatitis B vaccination in Laos</a></h3>
+          <p>Analysis of the Multiple Indicator Cluster Surveys (2011/12 and 2017) to identify determinants of hepatitis B vaccination uptake.</p>
+        </div>
+        <div class="project-card">
+          <h3>Personal Knowledge Management in Research</h3>
+          <p>A hands-on workshop teaching PKM techniques using Obsidian and Zotero to boost academic productivity and knowledge retention.</p>
+        </div>
+        <div class="project-card">
+          <h3><a href="https://pubmed.ncbi.nlm.nih.gov/37403670/" target="_blank" rel="noopener">The identification of enteric fever-specific antigens for population based serosurveillance</a></h3>
+          <p>Collaborative research project aiming to establish serosurveillance markers for enteric fever through laboratory and population-based approaches.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact-consultation">
+      <h2>Contact for Consultation</h2>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe6Qfu7Hp-tFzOCPB1tv6fbcSsjZeC2aNnIxhPe8XtVhRNgqA/viewform?embedded=true" width="640" height="876" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </section>
   </main>
-
   <footer>
     <p>© <span id="year"></span> Lisa Hefele</p>
   </footer>
-
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-  <!-- Botpress Chatbot -->
   <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2025/05/30/16/20250530163221-DRK34BG3.js"></script>
 </body>
