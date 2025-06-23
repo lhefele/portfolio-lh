@@ -33,15 +33,28 @@
       text-align: center;
       padding: 3rem 1rem 2rem;
     }
-    nav { margin-top: 0.5rem; }
-    nav a {
+    .external-links {
+      margin-top: 1rem;
+    }
+    .external-links a {
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-bottom: 1px solid transparent;
       color: #ffffff;
       margin: 0 0.65rem;
-      font-size: 0.9rem;
-      opacity: 0.9;
-      transition: opacity 0.2s ease;
     }
-    nav a:hover { opacity: 1; }
+    .external-links a:hover { border-color: #ffffff; }
+    .section-links {
+      text-align: center;
+      margin: 1rem auto;
+    }
+    .section-links a {
+      color: #003366;
+      margin: 0 0.65rem;
+      font-size: 1.05rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
     main { max-width: 780px; margin: 0 auto; padding: 2rem 1rem; }
     section { margin: 2.5rem 0; }
     footer {
@@ -52,21 +65,6 @@
       color: #555;
     }
     ul li { margin-left: 1rem; margin-bottom: 0.4rem; }
-    .external-links {
-      margin: 0 0 2rem 0;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      justify-content: center;
-    }
-    .external-links a {
-      font-weight: 700;
-      font-size: 1.1rem;
-      border-bottom: 1px solid transparent;
-      color: #003366;
-    }
-    .external-links a:hover { border-color: #003366; }
-    #about-me p { margin-bottom: 1.75rem; }
     .card-container {
       display: flex;
       flex-direction: column;
@@ -84,41 +82,48 @@
       color: #003366;
     }
   </style>
+</style>
 </head>
 <body>
   <header>
     <h1>Lisa Hefele</h1>
     <img src="https://github.com/lhefele/graph-ai-portfolio-lh/blob/main/saved.png?raw=true" alt="Lisa Hefele" class="avatar" />
-    <nav aria-label="Site navigation">
-      <a href="#about-me">About Me</a>
-      <a href="#about-me">Skills</a>
-      <a href="#research-interests">Interests</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact-consultation">Contact</a>
-    </nav>
-  </header>
-  <main>
+    
     <div class="external-links" aria-label="Profiles">
       <a href="https://linkedin.com/in/lisahefele/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://github.com/lhefele" target="_blank" rel="noopener">GitHub</a>
       <a href="https://orcid.org/0000-0001-5449-9503" target="_blank" rel="noopener">ORCID</a>
     </div>
+    
+  
+  </header>
+  <div class="section-links" style="text-align: center; margin: 1rem auto;">
+    <a href="#about-me" style="color: #003366; margin: 0 0.65rem; font-size: 1.05rem; text-decoration: none; font-weight: bold;">About Me</a>
+    <a href="#about-me" style="color: #003366; margin: 0 0.65rem; font-size: 1.05rem; text-decoration: none; font-weight: bold;">Skills</a>
+    <a href="#research-interests" style="color: #003366; margin: 0 0.65rem; font-size: 1.05rem; text-decoration: none; font-weight: bold;">Interests</a>
+    <a href="#projects" style="color: #003366; margin: 0 0.65rem; font-size: 1.05rem; text-decoration: none; font-weight: bold;">Projects</a>
+    <a href="#contact-consultation" style="color: #003366; margin: 0 0.65rem; font-size: 1.05rem; text-decoration: none; font-weight: bold;">Contact</a>
+  </div>
+  <main>
     <section id="about-me">
-      <h2>About Me</h2>
-      <p>
-        I specialise in planning and conducting epidemiological research, utilising digital data‑collection platforms and applying advanced analytics in R and Stata to generate actionable insights. I am passionate about open science; I share reproducible code on <a href="https://github.com/lhefele" target="_blank" rel="noopener">GitHub</a> and advocate transparent, version-controlled workflows. I also leverage generative AI to accelerate literature reviews, refine code, and build automated workflows. Comfortable in multidisciplinary teams, I focus on translating reliable data into practical improvements for public health.
-      </p>
-      <h2>Research &amp; Technical Skills</h2>
-      <ul>
-        <li>Epidemiological study design &amp; field coordination</li>
-        <li>Project management &amp; stakeholder engagement</li>
-        <li>Statistical analysis &amp; data visualisation (R, Stata, Python)</li>
-        <li>Digital data collection platforms (REDCap, KoboToolbox)</li>
-        <li>Reproducible research &amp; version control (Git/GitHub)</li>
-        <li>AI‑driven workflows &amp; automation</li>
-      </ul>
-    </section>
-    <section id="research-interests">
+  <h2>About Me</h2>
+  <p>
+    I specialise in planning and conducting epidemiological research, utilising digital data‑collection platforms and applying advanced analytics in R and Stata to generate actionable insights. I am passionate about open science; I share reproducible code on <a href="https://github.com/lhefele" target="_blank" rel="noopener">GitHub</a> and advocate transparent, version-controlled workflows. I also leverage generative AI to accelerate literature reviews, refine code, and build automated workflows. Comfortable in multidisciplinary teams, I focus on translating reliable data into practical improvements for public health.
+  </p>
+  <div style="height: 2rem;"></div>
+  <h2>Research &amp; Technical Skills</h2>
+  <ul>
+    <li>Epidemiological study design &amp; field coordination</li>
+    <li>Project management &amp; stakeholder engagement</li>
+    <li>Statistical analysis &amp; data visualisation (R, Stata, Python)</li>
+    <li>Digital data collection platforms (REDCap, KoboToolbox)</li>
+    <li>Reproducible research &amp; version control (Git/GitHub)</li>
+    <li>AI‑driven workflows &amp; automation</li>
+  </ul>
+</section>
+
+    
+<section id="research-interests">
       <h2>Research Interests</h2>
       <ul>
         <li>Epidemiology &amp; public health</li>
